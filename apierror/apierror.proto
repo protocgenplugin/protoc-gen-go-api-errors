@@ -1,0 +1,27 @@
+syntax = "proto3";
+
+package errors;
+
+option go_package = "apierror/apierror;apierror";
+option java_multiple_files = true;
+option java_package = "com.gitcode.protocgenplugin.protoc_gen_go_api_errors";
+option objc_class_prefix = "APIError";
+
+import "google/protobuf/descriptor.proto";
+
+//message Error {
+//  int32 status_code = 2023;
+//  int32 code = 2024;
+//  string reason = 2025;
+//  string message = 2026;
+//};
+
+extend google.protobuf.EnumOptions {
+  int32 default_status_code = 1106;
+  int32 default_code = 1108;
+}
+
+extend google.protobuf.EnumValueOptions {
+  int32 status_code = 1107;
+  int32 code = 1109;
+}

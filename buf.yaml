@@ -1,5 +1,4 @@
 version: v2
-name: buf.build/go-kratos/protoc-gen-go-errors
 lint:
   use:
     - DEFAULT

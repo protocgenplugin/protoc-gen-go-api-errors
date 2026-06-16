@@ -12,7 +12,8 @@ var errorsTemplate string
 type errorInfo struct {
 	Name       string
 	Value      string
-	HTTPCode   int
+	StatusCode int32
+	Code       int32
 	CamelValue string
 	Comment    string
 	HasComment bool
